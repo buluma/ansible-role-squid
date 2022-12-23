@@ -14,16 +14,8 @@ molecule:
   retry: 1
   parallel:
     matrix:
-      - image: "ubuntu"
+      - image: "alpine-openrc"
         tag: "latest"
-      - image: "docker-ubuntu-systemd"
-        tag: "jammy"
-      - image: "docker-ubuntu2204-ansible"
-        tag: "latest"
-      - image: "ubuntu-python3"
-        tag: "latest"
-      - image: "gitlab-runner"
-        tag: "alpine"
 
 testing:
   stage: test
