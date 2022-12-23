@@ -8,26 +8,16 @@ molecule:
   stage: build
   allow_failure: true
   script:
-    - molecule test
+    - molecule converge
   rules:
     - if: $CI_COMMIT_REF_NAME == "master"
   retry: 1
   parallel:
     matrix:
-      - image: "gitlab-runner"
-        tag: "centos"
-      - image: "gitlab-runner"
-        tag: "opensuse"
-      - image: "gitlab-runner"
-        tag: "debian"
-      - image: "gitlab-runner"
-        tag: "fedora"
-      - image: "gitlab-runner"
-        tag: "ubuntu"
+      - image: "ubuntu"
+        tag: "latest"
       - image: "gitlab-runner"
         tag: "alpine"
-      - image: "gitlab-runner"
-        tag: "amazonlinux"
 
 testing:
   stage: test
