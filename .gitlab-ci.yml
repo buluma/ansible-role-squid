@@ -16,6 +16,12 @@ molecule:
     matrix:
       - image: "ubuntu"
         tag: "latest"
+      - image: "docker-ubuntu-systemd"
+        tag: "jammy"
+      - image: "docker-ubuntu2204-ansible"
+        tag: "latest"
+      - image: "ubuntu-python3"
+        tag: "latest"
       - image: "gitlab-runner"
         tag: "alpine"
 
