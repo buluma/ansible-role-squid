@@ -45,8 +45,8 @@ The machine needs to be prepared. In CI this is done using `molecule/default/pre
   become: yes
 
   roles:
-    - role: robertdebock.bootstrap
-    - role: robertdebock.core_dependencies
+    - role: buluma.bootstrap
+    - role: buluma.core_dependencies
 ```
 
 
@@ -74,8 +74,8 @@ The following roles are used to prepare a system. You can prepare your system in
 
 | Requirement | GitHub | GitLab |
 |-------------|--------|--------|
-|[robertdebock.bootstrap](https://galaxy.ansible.com/buluma/robertdebock.bootstrap)|[![Build Status GitHub](https://github.com/buluma/robertdebock.bootstrap/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/robertdebock.bootstrap/actions)|[![Build Status GitLab ](https://gitlab.com/buluma/robertdebock.bootstrap/badges/master/pipeline.svg)](https://gitlab.com/buluma/robertdebock.bootstrap)|
-|[robertdebock.core_dependencies](https://galaxy.ansible.com/buluma/robertdebock.core_dependencies)|[![Build Status GitHub](https://github.com/buluma/robertdebock.core_dependencies/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/robertdebock.core_dependencies/actions)|[![Build Status GitLab ](https://gitlab.com/buluma/robertdebock.core_dependencies/badges/master/pipeline.svg)](https://gitlab.com/buluma/robertdebock.core_dependencies)|
+|[buluma.bootstrap](https://galaxy.ansible.com/buluma/buluma.bootstrap)|[![Build Status GitHub](https://github.com/buluma/buluma.bootstrap/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/buluma.bootstrap/actions)|[![Build Status GitLab ](https://gitlab.com/buluma/buluma.bootstrap/badges/master/pipeline.svg)](https://gitlab.com/buluma/buluma.bootstrap)|
+|[buluma.core_dependencies](https://galaxy.ansible.com/buluma/buluma.core_dependencies)|[![Build Status GitHub](https://github.com/buluma/buluma.core_dependencies/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/buluma.core_dependencies/actions)|[![Build Status GitLab ](https://gitlab.com/buluma/buluma.core_dependencies/badges/master/pipeline.svg)](https://gitlab.com/buluma/buluma.core_dependencies)|
 
 ## [Context](#context)
 
