@@ -1,5 +1,13 @@
 # Changelog
 
+## [Unreleased](https://github.com/buluma/ansible-role-squid/tree/HEAD)
+
+[Full Changelog](https://github.com/buluma/ansible-role-squid/compare/0.0.1...HEAD)
+
+**Closed issues:**
+
+- Update buluma/todo-to-issue-action@v1.0.1 @buluma [\#7](https://github.com/buluma/ansible-role-squid/issues/7)
+
 ## [0.0.1](https://github.com/buluma/ansible-role-squid/tree/0.0.1) (2022-12-23)
 
 [Full Changelog](https://github.com/buluma/ansible-role-squid/compare/ce1d011125111d7d439beb8e1a18cd1dfd28ed36...0.0.1)
