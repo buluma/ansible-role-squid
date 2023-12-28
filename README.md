@@ -1,10 +1,10 @@
-# [Ansible role squid](#squid)
+# Ansible role [squid](https://galaxy.ansible.com/ui/standalone/roles/buluma/squid/documentation)
 
 Install and configure squid on your system.
 
-|GitHub|GitLab|Downloads|Version|Issues|Pull Requests|
-|------|------|-------|-------|------|-------------|
-|[![github](https://github.com/buluma/ansible-role-squid/actions/workflows/molecule.yml/badge.svg)](https://github.com/buluma/ansible-role-squid/actions/workflows/molecule.yml)|[![gitlab](https://gitlab.com/shadowwalker/ansible-role-squid/badges/master/pipeline.svg)](https://gitlab.com/shadowwalker/ansible-role-squid)|[![downloads](https://img.shields.io/ansible/role/d/4841)](https://galaxy.ansible.com/buluma/squid)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-squid.svg)](https://github.com/buluma/ansible-role-squid/releases/)|[![Issues](https://img.shields.io/github/issues/buluma/ansible-role-squid.svg)](https://github.com/buluma/ansible-role-squid/issues/)|[![PullRequests](https://img.shields.io/github/issues-pr-closed-raw/buluma/ansible-role-squid.svg)](https://github.com/buluma/ansible-role-squid/pulls/)|
+|GitHub|Version|Issues|Pull Requests|Downloads|
+|------|-------|------|-------------|---------|
+|[![github](https://github.com/buluma/ansible-role-squid/actions/workflows/molecule.yml/badge.svg)](https://github.com/buluma/ansible-role-squid/actions/workflows/molecule.yml)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-squid.svg)](https://github.com/buluma/ansible-role-squid/releases/)|[![Issues](https://img.shields.io/github/issues/buluma/ansible-role-squid.svg)](https://github.com/buluma/ansible-role-squid/issues/)|[![PullRequests](https://img.shields.io/github/issues-pr-closed-raw/buluma/ansible-role-squid.svg)](https://github.com/buluma/ansible-role-squid/pulls/)|[![Ansible Role](https://img.shields.io/ansible/role/d/buluma/squid)](https://galaxy.ansible.com/ui/standalone/roles/buluma/squid/documentation)|
 
 ## [Example Playbook](#example-playbook)
 
@@ -76,10 +76,10 @@ squid_cache_dir: ufs /var/spool/squid 100 16 256
 
 The following roles are used to prepare a system. You can prepare your system in another way.
 
-| Requirement | GitHub | GitLab |
+| Requirement | GitHub | Version |
 |-------------|--------|--------|
-|[buluma.bootstrap](https://galaxy.ansible.com/buluma/bootstrap)|[![Build Status GitHub](https://github.com/buluma/ansible-role-bootstrap/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-bootstrap/actions)|[![Build Status GitLab](https://gitlab.com/shadowwalker/ansible-role-bootstrap/badges/master/pipeline.svg)](https://gitlab.com/shadowwalker/ansible-role-bootstrap)|
-|[buluma.core_dependencies](https://galaxy.ansible.com/buluma/core_dependencies)|[![Build Status GitHub](https://github.com/buluma/ansible-role-core_dependencies/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-core_dependencies/actions)|[![Build Status GitLab](https://gitlab.com/shadowwalker/ansible-role-core_dependencies/badges/master/pipeline.svg)](https://gitlab.com/shadowwalker/ansible-role-core_dependencies)|
+|[buluma.bootstrap](https://galaxy.ansible.com/buluma/bootstrap)|[![Ansible Molecule](https://github.com/buluma/ansible-role-bootstrap/actions/workflows/molecule.yml/badge.svg)](https://github.com/buluma/ansible-role-bootstrap/actions/workflows/molecule.yml)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-bootstrap.svg)](https://github.com/shadowwalker/ansible-role-bootstrap)|
+|[buluma.core_dependencies](https://galaxy.ansible.com/buluma/core_dependencies)|[![Ansible Molecule](https://github.com/buluma/ansible-role-core_dependencies/actions/workflows/molecule.yml/badge.svg)](https://github.com/buluma/ansible-role-core_dependencies/actions/workflows/molecule.yml)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-core_dependencies.svg)](https://github.com/shadowwalker/ansible-role-core_dependencies)|
 
 ## [Context](#context)
 
@@ -103,7 +103,7 @@ This role has been tested on these [container images](https://hub.docker.com/u/b
 |[opensuse](https://hub.docker.com/repository/docker/buluma/opensuse/general)|all|
 |[Ubuntu](https://hub.docker.com/repository/docker/buluma/ubuntu/general)|all|
 
-The minimum version of Ansible required is 2.10, tests have been done to:
+The minimum version of Ansible required is 2.12, tests have been done to:
 
 - The previous version.
 - The current version.
@@ -117,14 +117,11 @@ If you find issues, please register them in [GitHub](https://github.com/buluma/a
 
 ## [License](#license)
 
-[Apache-2.0](https://github.com/buluma/ansible-role-squid/blob/master/LICENSE).
+[Apache-2.0](https://github.com/buluma/ansible-role-squid/blob/master/LICENSE)
 
 ## [Author Information](#author-information)
 
-[buluma](https://buluma.github.io/)
+[Shadow Walker](https://buluma.github.io/)
 
-Please consider [sponsoring me](https://github.com/sponsors/buluma).
-
-### [Special Thanks](#special-thanks)
 
 Template inspired by [Robert de Bock](https://github.com/robertdebock)
