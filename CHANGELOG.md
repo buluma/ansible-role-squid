@@ -1,5 +1,13 @@
 # Changelog
 
+## [Unreleased](https://github.com/buluma/ansible-role-squid/tree/HEAD)
+
+[Full Changelog](https://github.com/buluma/ansible-role-squid/compare/0.1.0...HEAD)
+
+**Merged pull requests:**
+
+- Bump buluma/molecule-action from 6.0.0 to 6.0.1 [\#9](https://github.com/buluma/ansible-role-squid/pull/9) ([dependabot[bot]](https://github.com/apps/dependabot))
+
 ## [0.1.0](https://github.com/buluma/ansible-role-squid/tree/0.1.0) (2024-01-02)
 
 [Full Changelog](https://github.com/buluma/ansible-role-squid/compare/0.0.2...0.1.0)
