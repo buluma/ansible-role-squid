@@ -1,8 +1,8 @@
 # Changelog
 
-## [Unreleased](https://github.com/buluma/ansible-role-squid/tree/HEAD)
+## [0.2.0](https://github.com/buluma/ansible-role-squid/tree/0.2.0) (2024-01-20)
 
-[Full Changelog](https://github.com/buluma/ansible-role-squid/compare/0.1.0...HEAD)
+[Full Changelog](https://github.com/buluma/ansible-role-squid/compare/0.1.0...0.2.0)
 
 **Merged pull requests:**
 
