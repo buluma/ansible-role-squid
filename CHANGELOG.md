@@ -1,5 +1,13 @@
 # Changelog
 
+## [Unreleased](https://github.com/buluma/ansible-role-squid/tree/HEAD)
+
+[Full Changelog](https://github.com/buluma/ansible-role-squid/compare/0.2.0...HEAD)
+
+**Merged pull requests:**
+
+- Bump release-drafter/release-drafter from 5 to 6 [\#10](https://github.com/buluma/ansible-role-squid/pull/10) ([dependabot[bot]](https://github.com/apps/dependabot))
+
 ## [0.2.0](https://github.com/buluma/ansible-role-squid/tree/0.2.0) (2024-01-20)
 
 [Full Changelog](https://github.com/buluma/ansible-role-squid/compare/0.1.0...0.2.0)
