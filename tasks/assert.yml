@@ -7,7 +7,7 @@
       - squid_port is number
       - squid_port > 0
       - squid_port < 65536
-    quiet: yes
+    quiet: true
 
 - name: assert | Test if squid_cache_dir is set correctly
   ansible.builtin.assert:
@@ -15,9 +15,9 @@
       - squid_cache_dir is defined
       - squid_cache_dir is string
       - squid_cache_dir.split(" ")[0] in [ "ufs", "aufs", "diskd", "rock", "null" ]
-    quiet: yes
+    quiet: true
 
-- name: assert | Test if squid_cache_dir is set correctly when no null driver is used
+- name: assert | Test if squid_cache_dir is set correctly when false null driver is used
   ansible.builtin.assert:
     that:
       - squid_cache_dir.split(" ")[2]
@@ -26,7 +26,7 @@
       - squid_cache_dir.split(" ")[3] |int > 0
       - squid_cache_dir.split(" ")[4]
       - squid_cache_dir.split(" ")[4] |int > 0
-    quiet: yes
+    quiet: true
     fail_msg: "The null storage driver does not allow arguments to be set."
   when:
     - squid_cache_dir.split(" ")[0] != "null"
@@ -35,7 +35,7 @@
   ansible.builtin.assert:
     that:
       - squid_acls is iterable
-    quiet: yes
+    quiet: true
   when:
     - squid_acls is defined
 
@@ -48,7 +48,7 @@
       - item.classifier is string
       - item.value is defined
       - item.value is string
-    quiet: yes
+    quiet: true
   loop: "{{ squid_acls }}"
   loop_control:
     label: "{{ item.name }}"
@@ -62,7 +62,7 @@
       - item.state is string
       - item.acls is defined
       - item.acls is iterable
-    quiet: yes
+    quiet: true
   loop: "{{ squid_http_access }}"
   loop_control:
     label: "{{ item.state }}"
@@ -73,7 +73,7 @@
   ansible.builtin.assert:
     that:
       - squid_rules is iterable
-    quiet: yes
+    quiet: true
   when:
     - squid_rules is defined
 
@@ -85,7 +85,7 @@
       - item.decision is defined
       - item.decision is string
       - item.decision in [ "allow", "deny" ]
-    quiet: yes
+    quiet: true
   loop: "{{ squid_rules }}"
   loop_control:
     label: "{{ item.acl }}"
