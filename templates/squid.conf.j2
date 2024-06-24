@@ -2,6 +2,8 @@
 
 http_port {{ squid_port }}
 
+include /etc/squid/conf.d/*.conf
+
 cache_effective_user {{ squid_user }}
 cache_effective_group {{ squid_group }}
 
