@@ -5,4 +5,4 @@
 repository:
   description: Install and configure squid on your system.
   homepage: https://buluma.github.io/
-  topics: proxy, squid, ansible, molecule, tox, playbook
+  topics: proxy, squid, ansible, molecule, playbook
