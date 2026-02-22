@@ -11,44 +11,40 @@ Install and configure squid on your system.
 This example is taken from [`molecule/default/converge.yml`](https://github.com/buluma/ansible-role-squid/blob/master/molecule/default/converge.yml) and is tested on each push, pull request and release.
 
 ```yaml
----
-- name: Converge
-  hosts: all
-  become: true
+- become: true
   gather_facts: true
-
+  hosts: all
+  name: Converge
   roles:
-    - role: buluma.squid
-      squid_cache_dir: "aufs /var/spool/squid 16000 16 256 max-size=8589934592"
-      squid_cache_replacement_policy: heap LFUDA
-      squid_maximum_object_size_mb: 256
-      squid_acls:
-        - name: localnet
-          classifier: src
-          value: "0.0.0.1-0.255.255.255"
-      squid_rules:
-        - acl: to_localhost
-          decision: deny
-        - acl: localnet
-          decision: allow
-        - acl: localhost
-          decision: allow
-        - acl: all
-          decision: deny
+  - role: buluma.squid
+    squid_acls:
+    - classifier: src
+      name: localnet
+      value: 0.0.0.1-0.255.255.255
+    squid_cache_dir: aufs /var/spool/squid 16000 16 256 max-size=8589934592
+    squid_cache_replacement_policy: heap LFUDA
+    squid_maximum_object_size_mb: 256
+    squid_rules:
+    - acl: to_localhost
+      decision: deny
+    - acl: localnet
+      decision: allow
+    - acl: localhost
+      decision: allow
+    - acl: all
+      decision: deny
 ```
 
 The machine needs to be prepared. In CI this is done using [`molecule/default/prepare.yml`](https://github.com/buluma/ansible-role-squid/blob/master/molecule/default/prepare.yml):
 
 ```yaml
----
-- name: Prepare
-  hosts: all
+- become: true
   gather_facts: false
-  become: true
-
+  hosts: all
+  name: Prepare
   roles:
-    - role: buluma.bootstrap
-    - role: buluma.core_dependencies
+  - role: buluma.bootstrap
+  - role: buluma.core_dependencies
 ```
 
 Also see a [full explanation and example](https://buluma.github.io/how-to-use-these-roles.html) on how to use these roles.
@@ -58,14 +54,8 @@ Also see a [full explanation and example](https://buluma.github.io/how-to-use-th
 The default values for the variables are set in [`defaults/main.yml`](https://github.com/buluma/ansible-role-squid/blob/master/defaults/main.yml):
 
 ```yaml
----
-# defaults file for squid
-
-# The port squid is listening on.
-squid_port: 3128
-
-# The directory where (and how) to cache.
 squid_cache_dir: ufs /var/spool/squid 100 16 256
+squid_port: 3128
 ```
 
 ## [Requirements](#requirements)
