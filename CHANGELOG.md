@@ -9,6 +9,12 @@
 - Update action [\#6](https://github.com/buluma/ansible-role-squid/issues/6)
 - rebuild action [\#5](https://github.com/buluma/ansible-role-squid/issues/5)
 
+**Merged pull requests:**
+
+- Bump ansible/ansible-lint from 26.1.1 to 26.2.0 [\#18](https://github.com/buluma/ansible-role-squid/pull/18) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump actions/checkout from 4 to 6 [\#17](https://github.com/buluma/ansible-role-squid/pull/17) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump release-drafter/release-drafter from 5 to 6 [\#13](https://github.com/buluma/ansible-role-squid/pull/13) ([dependabot[bot]](https://github.com/apps/dependabot))
+
 ## [24.3.31](https://github.com/buluma/ansible-role-squid/tree/24.3.31) (2024-03-29)
 
 [Full Changelog](https://github.com/buluma/ansible-role-squid/compare/0.2.0...24.3.31)
