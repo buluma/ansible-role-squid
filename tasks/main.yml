@@ -29,6 +29,7 @@
     validate: squid -k parse -f %s
   notify:
     - Restart squid
+  # Separator for the pre-commit handler parser.
 - name: Create cache directory
   ansible.builtin.file:
     group: "{{ squid_group }}"
