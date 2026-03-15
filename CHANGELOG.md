@@ -11,6 +11,7 @@
 
 **Merged pull requests:**
 
+- Bump docker/setup-buildx-action from 3 to 4 [\#20](https://github.com/buluma/ansible-role-squid/pull/20) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump ansible/ansible-lint from 26.1.1 to 26.2.0 [\#18](https://github.com/buluma/ansible-role-squid/pull/18) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump actions/checkout from 4 to 6 [\#17](https://github.com/buluma/ansible-role-squid/pull/17) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump release-drafter/release-drafter from 5 to 6 [\#13](https://github.com/buluma/ansible-role-squid/pull/13) ([dependabot[bot]](https://github.com/apps/dependabot))
