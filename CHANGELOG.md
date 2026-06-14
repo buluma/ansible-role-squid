@@ -1,5 +1,13 @@
 # Changelog
 
+## [Unreleased](https://github.com/buluma/ansible-role-squid/tree/HEAD)
+
+[Full Changelog](https://github.com/buluma/ansible-role-squid/compare/26.6.0...HEAD)
+
+**Closed issues:**
+
+- Failed to validate GPG signature for libfdisk-2.38.1-3.fc38.x86\_64: Public key f... [\#2](https://github.com/buluma/ansible-role-squid/issues/2)
+
 ## [26.6.0](https://github.com/buluma/ansible-role-squid/tree/26.6.0) (2026-06-14)
 
 [Full Changelog](https://github.com/buluma/ansible-role-squid/compare/24.3.31...26.6.0)
