@@ -39,3 +39,5 @@ cache_replacement_policy {{ squid_cache_replacement_policy }}
 {% if squid_maximum_object_size_mb is defined %}
 maximum_object_size {{ squid_maximum_object_size_mb }} MB
 {% endif %}
+
+include {{ squid_config_directory }}/conf.d/*.conf
