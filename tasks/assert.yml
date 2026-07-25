@@ -19,11 +19,11 @@
     fail_msg: The null storage driver does not allow arguments to be set.
     quiet: true
     that:
-      - squid_cache_dir.split(" ")[2]
+      - squid_cache_dir.split(" ") | length > 2
       - squid_cache_dir.split(" ")[2] |int > 0
-      - squid_cache_dir.split(" ")[3]
+      - squid_cache_dir.split(" ") | length > 3
       - squid_cache_dir.split(" ")[3] |int > 0
-      - squid_cache_dir.split(" ")[4]
+      - squid_cache_dir.split(" ") | length > 4
       - squid_cache_dir.split(" ")[4] |int > 0
   when:
     - squid_cache_dir.split(" ")[0] != "null"
